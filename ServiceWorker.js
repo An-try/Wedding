@@ -1,9 +1,9 @@
 const cacheName = "Over Games-Wedding Invitation-0.0.1";
 const contentToCache = [
     "Build/WeddingInvitation.loader.js",
-    "Build/WeddingInvitation.framework.js.br",
-    "Build/WeddingInvitation.data.br",
-    "Build/WeddingInvitation.wasm.br",
+    "Build/WeddingInvitation.framework.js",
+    "Build/WeddingInvitation.data",
+    "Build/WeddingInvitation.wasm",
     "TemplateData/style.css"
 
 ];
