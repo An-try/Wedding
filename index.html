@@ -18,13 +18,18 @@
       }
 
       .dot-loader {
-        display: inline-block;
-        font-size: 64px;
-        color: #333;
-        letter-spacing: 12px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
       }
 
       .dot-loader span {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #333;
         animation: dot-animation 1.4s infinite;
         opacity: 0.5;
       }
@@ -44,11 +49,11 @@
       @keyframes dot-animation {
         0%, 60%, 100% {
           opacity: 0.5;
-          transform: translateY(0);
+          transform: translateY(0) scale(1);
         }
         30% {
           opacity: 1;
-          transform: translateY(-10px);
+          transform: translateY(-10px) scale(1.2);
         }
       }
     </style>
@@ -58,9 +63,9 @@
         <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
         <div id="unity-loading-bar">
           <div class="dot-loader">
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
         <div id="unity-warning"> </div>
